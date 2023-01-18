@@ -8,6 +8,7 @@ TagManager:
   - Purchaseable
   - CinemachineTarget
   - FallingBuilding
+  - Patient
   layers:
   - Default
   - TransparentFX
