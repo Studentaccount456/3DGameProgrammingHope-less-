@@ -18,12 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1/Level 1 GO.unity
     guid: 91a211fd50fe3d84091143efd740e43f
   - enabled: 1
-    path: Assets/Scenes/Level 4/RunLevel.unity
-    guid: 9fb915bb252051f4a9da04887c2fd965
-  - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/Level 3/Level 3.unity
     guid: 156fcce73c699d14a8d7ad3d2cb56411
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
-    guid: 9e41f4ac3bfeb0843ac322fee0d9a387
+    path: Assets/Scenes/Level 4/RunLevel.unity
+    guid: 9fb915bb252051f4a9da04887c2fd965
   m_configObjects: {}
