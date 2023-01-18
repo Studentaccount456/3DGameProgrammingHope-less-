@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3318198}
   - component: {fileID: 2369570}
   - component: {fileID: 6475884}
+  - component: {fileID: 8355452376586381370}
   m_Layer: 0
   m_Name: Fortified_Wall_1A
   m_TagString: Untagged
@@ -98,3 +99,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 907bd9aaf65653246a1f03e473659465, type: 2}
+--- !u!65 &8355452376586381370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4993763, y: 10.00749, z: 8.000001}
+  m_Center: {x: 0, y: 0.3224506, z: 0}
