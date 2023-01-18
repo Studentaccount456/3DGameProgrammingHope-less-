@@ -10,7 +10,7 @@ public class NoGravity : MonoBehaviour
     void Start()
     {
         // Grabs the gravity variable of playerMovement script and sets it to 0:
-        playerMovement.gravity = 0;
+        if (playerMovement != null) playerMovement.gravity = 0;
     }
 
     // Update is called once per frame

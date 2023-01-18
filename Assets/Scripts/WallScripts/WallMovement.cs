@@ -19,6 +19,8 @@ public class WallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Wait in case the game is paused.
+        if (PauseHandlerBehaviour.IsPaused) return;
         // Use the Translate function of transform to move wall
         // userdirection => Direction to go
         // speed => How fast

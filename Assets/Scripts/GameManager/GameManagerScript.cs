@@ -48,7 +48,7 @@ public class GameManagerScript : MonoBehaviour
                     // Stops the gameTime and Audio in game (if gameTime is not stopped wall will run you over and gameOverScreen will be called upon)
                     Invoke("PauzeGame", 1);
                     // If the player is alive and the EndScreen has been reached:
-                } else if (healthPlayer.isAlive && !EndScreen.active)
+                } else if (healthPlayer.isAlive && !EndScreen.activeSelf)
                 {
                     //Invoke ResumeGame Method
                     ResumeGame();

@@ -52,13 +52,13 @@ public class GameManagerBehaviour : MonoBehaviour
         if (gameState.Pollution > 100)
         {
             // Stage 1 complete, go to next level.
-            LevelHandlerBehaviour.GoToLevel("1 End");
+            LevelHandlerBehaviour.GoToRaw("Level 1 End");
         }
         
         if (gameState.EnergyTimer <= 0)
         {
             // Stage 1 failed, go back.
-            LevelHandlerBehaviour.GoToLevel("1 GO");
+            LevelHandlerBehaviour.GoToRaw("Level 1 GO");
         }
     }
 

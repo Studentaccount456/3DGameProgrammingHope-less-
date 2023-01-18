@@ -26,8 +26,8 @@ public class Hit : MonoBehaviour
     {
         if (other.gameObject.tag == "projectile")
         {
-            print("hit");
-            print(transform.position);
+            //print("hit");
+            //print(transform.position);
             Instantiate(explosionParticle, transform.position, transform.rotation);
             // DO explosion
             if (audioClip)

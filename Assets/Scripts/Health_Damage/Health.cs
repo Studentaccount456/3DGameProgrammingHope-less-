@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour {
 	
@@ -30,7 +31,7 @@ public class Health : MonoBehaviour {
 		
 		if (LevelToLoad=="") // default to current scene 
 		{
-			LevelToLoad = Application.loadedLevelName;
+			LevelToLoad = SceneManager.GetActiveScene().name;
 		}
 	}
 	
@@ -54,7 +55,7 @@ public class Health : MonoBehaviour {
 				switch(onLivesGone)
 				{
 				case deathAction.loadLevelWhenDead:
-					Application.LoadLevel (LevelToLoad);
+					SceneManager.LoadScene (LevelToLoad);
 					break;
 				case deathAction.doNothingWhenDead:
 					// do nothing, death must be handled in another way elsewhere

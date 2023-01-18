@@ -18,16 +18,22 @@ public class MouseLook : MonoBehaviour
     {
         // Puts the mouse cursor in Locked mode, which also makes mouse visually disappear:
         Cursor.lockState = CursorLockMode.Locked;
-        
     }
 
     // Update is called once per frame
     void Update()
     {
+        // If the game is paused, do not handle user movement so everything is "frozen in time".
+        if (PauseHandlerBehaviour.IsPaused)
+        {
+            // If the cursor is still in locked mode, release it so it can click on the UI.
+            return;
+        }
+
         // Gets the input of the mouse on the X-axis:
-      float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         // Gets the input of the mouse on the Y-axis:
-      float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         // Limits the mouse Y-coördinates to not gove over 90° up and 90° down  => Otherwise heads snaps over natural limit (realism)
         xRotation -= mouseY;

@@ -20,7 +20,7 @@ public class MoveForward : MonoBehaviour
 
         //Moves projectile in certain direction at certain speeed
         transform.Translate(Vector3.forward * upSpeed * Time.deltaTime);
-        print(Vector3.forward * Mathf.Cos(Time.timeSinceLevelLoad) * upSpeed);
+        //print(Vector3.forward * Mathf.Cos(Time.timeSinceLevelLoad) * upSpeed);
     }
 }
 

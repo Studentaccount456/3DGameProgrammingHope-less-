@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelHandlerBehaviour : MonoBehaviour
 {
-    public static void GoToLevel(string level)
+    public static void GoToRaw(string scene)
     {
-        LoadScene("Scenes/Level " + level);
+        LoadScene(scene);
     }
 
     public static void GoToMainMenu()

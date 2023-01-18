@@ -18,7 +18,7 @@ public class Shoot : MonoBehaviour
     void Update()
     {
         float shoot = Input.GetAxis("Fire1");
-        print(shoot);
+        //print(shoot);
 
         if (shoot == 1 && timer >= shootRate) //shoot {
         {
