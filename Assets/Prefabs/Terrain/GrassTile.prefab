@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b06938e96db0145b7a14b6f780ee44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buildAudio: {fileID: 8300000, guid: 8ae3c335ca03d54429f68971c217d51e, type: 3}
 --- !u!1 &481280328215063449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,7 +1173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6390762679873274533
 Transform:
   m_ObjectHideFlags: 0
@@ -1500,9 +1501,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5285339398358933624}
   - component: {fileID: 1481850689872526046}
-  - component: {fileID: 5966466727428258422}
   - component: {fileID: 5064178306036327780}
   - component: {fileID: 6519734605552957855}
+  - component: {fileID: 3126573109088023065}
   m_Layer: 0
   m_Name: GrassTile
   m_TagString: Tile
@@ -1548,7 +1549,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &5966466727428258422
+--- !u!114 &5064178306036327780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761039840764492482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4297d143f6d1b644b1ffa551bf52369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1481850689872526046}
+--- !u!114 &6519734605552957855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761039840764492482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e949381b33e014c41824bd218201a27e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factoryObject: {fileID: 4687954653997126523}
+  turbineObject: {fileID: 4437628209504330566}
+  solarObject: {fileID: 3738664132168435208}
+--- !u!82 &3126573109088023065
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1644,34 +1673,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5064178306036327780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4761039840764492482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4297d143f6d1b644b1ffa551bf52369, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1481850689872526046}
---- !u!114 &6519734605552957855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4761039840764492482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e949381b33e014c41824bd218201a27e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factoryObject: {fileID: 4687954653997126523}
-  turbineObject: {fileID: 4437628209504330566}
-  solarObject: {fileID: 3738664132168435208}
 --- !u!1 &5315365306164211592
 GameObject:
   m_ObjectHideFlags: 0

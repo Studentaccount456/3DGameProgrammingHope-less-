@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TileHoverTargetBehaviour : MonoBehaviour
 {
+    // Last time the tile was hovered over with the cursor.
     private float _lastHovered = 0;
 
+    // The animator that makes the tile move up and down.
     public Animator animator;
 
     void Start()
@@ -18,6 +20,7 @@ public class TileHoverTargetBehaviour : MonoBehaviour
         CheckHovered();
     }
 
+    // Polls the last time the tile was hovered over.
     public void PollHovered()
     {
         _lastHovered = Time.time;
